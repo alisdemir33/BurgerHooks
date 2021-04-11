@@ -29,7 +29,7 @@ const orders = (props) => {
                 {orders}
             </div>
         );
-    }
+}
 
 
 const mapStateToProps = state => {
