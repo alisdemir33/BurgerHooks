@@ -118,7 +118,7 @@ const contactData = (props) => {
     }
 
     const inputChangedHandler = (event, inputIdentifier) => {
-
+       
         const updatedFormElement = updateObject(orderForm[inputIdentifier], {
             value: event.target.value,
             valid: checkValidity(event.target.value, orderForm[inputIdentifier].validation),
@@ -133,7 +133,7 @@ const contactData = (props) => {
             formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
         }
 
-        setOrderForm(orderForm);
+        setOrderForm(updatedOrderForm);
         setFormIsValid(formIsValid);
     }
 
