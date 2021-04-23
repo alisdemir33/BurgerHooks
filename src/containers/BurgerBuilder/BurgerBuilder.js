@@ -92,7 +92,7 @@ const burgerBuilder = (props) => {
             </Auxi>
         );
     
-        }
+}
 
 const mapStateToProps = state => {
     return {
