@@ -11,6 +11,7 @@ import { updateObject, checkValidity } from '../../shared/utility';
 
 const auth = (props) => {
     //commnet added
+    //secon comment
     const [authForm, setAuthForm] = useState({
         
             email: {
