@@ -10,7 +10,7 @@ import * as actions from '../../store/actions/index';
 import { updateObject, checkValidity } from '../../shared/utility';
 
 const auth = (props) => {
-
+    //commnet added
     const [authForm, setAuthForm] = useState({
         
             email: {
