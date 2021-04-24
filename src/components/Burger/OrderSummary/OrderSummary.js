@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import Auxi from '../../../hoc/Auxi/Auxi';
 import Button from '../../UI/Button/Button';
 
-class OrderSummary extends Component {
-    render () {
+const  orderSummary  = (props) => {
+   
         const ingredientSummary = Object.keys( this.props.ingredients )
             .map( igKey => {
                 return (
@@ -27,6 +27,6 @@ class OrderSummary extends Component {
             </Auxi>
         );
     }
-}
 
-export default OrderSummary;
+
+export default orderSummary;
