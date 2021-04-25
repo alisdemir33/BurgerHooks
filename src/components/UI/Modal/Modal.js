@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
+import React, { useEffect }  from 'react';
 
 import classes from './Modal.css';
 import Auxi from '../../../hoc/Auxi/Auxi';
 import Backdrop from '../Backdrop/Backdrop';
 
-class Modal extends Component {
+const  modal = (props) => {
 
-    shouldComponentUpdate ( nextProps, nextState ) {
-        return nextProps.show !== this.props.show || nextProps.children !== this.props.children;
-    }
+  useEffect( (nextProps, nextState) =>
+   { 
+       return nextProps.show !== this.props.show || nextProps.children !== this.props.children;
+},[]);
+   
+       
     
-    render () {
+    
+   
         return (
             <Auxi>
                 <Backdrop show={this.props.show} clicked={this.props.modalClosed} />
@@ -24,7 +28,7 @@ class Modal extends Component {
                 </div>
             </Auxi>
         )
-    }
+    
 }
 
 export default Modal;
