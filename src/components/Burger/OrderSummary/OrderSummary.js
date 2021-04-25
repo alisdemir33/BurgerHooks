@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Auxi from '../../../hoc/Auxi/Auxi';
 import Button from '../../UI/Button/Button';
 
-const  orderSummary  = (this.props) => {
+const  orderSummary  = (props) => {
    
         const ingredientSummary = Object.keys( props.ingredients )
             .map( igKey => {
